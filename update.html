@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Updates - LevelUpGaming.com</title>
+    <!-- Link Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Link Google Fonts - Montserrat and Pacifico -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            background-color: #1c1c1c;
+            color: #fff;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            padding-top: 50px; 
+            margin: 0;
+        }
+        .navbar-brand img {
+            max-height: 50px;
+            margin-right: 10px;
+        }
+        .updates-container {
+            background-color: #2c2c2c;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .update-card {
+            background-color: #3c3c3c;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .update-card img {
+            max-width: 100%;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            transition: transform 0.3s;
+        }
+
+        .update-card:hover img {
+            transform: scale(1.05);
+        }
+
+        .update-content {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .update-title {
+            font-family:'Courier New', Courier, monospace;
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #ff9900;
+        }
+
+        .update-date {
+            font-size: 14px;
+            color: #ccc;
+            margin-bottom: 10px;
+        }
+
+        .update-button {
+            background-color: #ff9900;
+            color: #1c1c1c;
+            border: none;
+            padding: 10px 15px;
+            font-size: 14px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .update-button:hover {
+            background-color: #e08000;
+        }
+
+        footer {
+            background-color:#1c1c1c;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .footer-links {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .footer-links li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: #ffcc00;
+        }
+
+        .social-icon {
+            margin-right: 10px;
+            color: white;
+            font-size: 20px;
+            transition: color 0.3s;
+        }
+
+        .social-icon:hover {
+            color: yellow;
+        }
+
+        .copyright-line {
+            position: relative;
+            display: inline-block;
+            color: #fff;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #ffcc00;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mb-5">
+         <a class="navbar-brand" href="index.html">
+                <img src="logo.png" class="img-fluid logo img" alt="Logo">
+            </a>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="updates-container">
+                    <h2 class="text-center mb-4">Latest Game Updates</h2>
+
+                    <!-- Update cards -->
+                    <div class="card update-card">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="pubg.png" alt="Update Image">
+                            </div>
+                            <div class="col-md-8">
+                                <h5 class="update-title">Exciting Update Now Live!</h5>
+                                <p class="update-date">Published on October 15, 2023</p>
+                                <p class="update-content">Unleash new adventures with upgraded graphics, additional levels, and exclusive in-game rewards.</p>
+                                <button class="update-button">Update</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card update-card">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="free.jpg" alt="Update Image">
+                            </div>
+                            <div class="col-md-8">
+                                <h5 class="update-title">New Multiplayer Features</h5>
+                                <p class="update-date">Published on October 12, 2023</p>
+                                <p class="update-content">Connect with friends and conquer challenges together with the latest multiplayer enhancements.</p>
+                                <button class="update-button">Update</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr style="background-color: #fff;">
+
+    <footer>
+        <div class="container">
+            <ul class="footer-links mb-4">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Action_Games.html">Games</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="footer-social-icons mb-3">
+                <a href="#"><i class="fab fa-facebook social-icon"></i></a>
+                <a href="#"><i class="fab fa-twitter social-icon"></i></a>
+                <a href="#"><i class="fab fa-instagram social-icon"></i></a>
+            </div>
+        </div>
+        <p class="text-light copyright-line">
+            &copy; 2024 LevelUpGaming.com
+        </p>
+    </footer>
+
+    <!-- Link Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

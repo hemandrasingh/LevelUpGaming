@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Games</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            margin-bottom: 30px;
+        }
+        .navbar-brand img {
+            max-height: 150px;
+            margin-right: 110px;
+            margin-left: 110px;
+        }
+        .game-card {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .game-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        .pagination 
+        {
+            display: flex;
+            list-style-type: none;
+            padding: 0;
+            justify-content: center;
+        }
+        .page-item {
+            margin: 0 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .page-item:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+        .current-page {
+            background-color: red;
+            color: #fff;
+        }
+        .prev-next {
+            margin: 0 10px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .prev-next:hover {
+            background-color: red;
+            color: #fff;
+        }
+
+        footer {
+            margin-top: 30px;
+            padding: 20px 0;
+            background-color: black;
+            color: white;
+        }
+
+        footer .text-uppercase {
+            margin-bottom: 15px;
+        }
+
+        footer .list-unstyled a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.2s;
+        }
+
+        footer .list-unstyled a:hover {
+            color: #ffcc00;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Action_Games.html">Games</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Free Games Section -->
+<section class="container mt-5">
+    <h2 class="text-center">Free Games</h2>
+    <div class="row mt-5">
+        <div class="col-md-4 mb-4">
+            <div class="card game-card">
+                <img src="f1.jpg" class="card-img-top" alt="Game 1">
+                <div class="card-body">
+                    <h5 class="card-title">Fortnite</h5>
+                    <p class="card-text">A battle royale game where players fight to be the last person standing on an ever-shrinking island..</p>
+                    <a href="#" class="btn btn-primary">Play Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card game-card">
+                <img src="f2.jpg" class="card-img-top" alt="Game 2">
+                <div class="card-body">
+                    <h5 class="card-title">Valorant</h5>
+                    <p class="card-text">A tactical first-person shooter with a focus on team-based unique agent abilities gameplay and unique agent abilities.</p>
+                    <a href="#" class="btn btn-primary">Play Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card game-card">
+                <img src="f3.jpg" class="card-img-top" alt="Game 3">
+                <div class="card-body">
+                    <h5 class="card-title">Warframe</h5>
+                    <p class="card-text">A cooperative third-person shooter set in a futuristic sci-fi world, focusing on fast-paced action and customization.</p>
+                    <a href="#" class="btn btn-primary">Play Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container mt-5">
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="card game-card">
+                <img src="f4.jpg" class="card-img-top" alt="Game 1">
+                <div class="card-body">
+                    <h5 class="card-title">Among Us</h5>
+                    <p class="card-text">A social deduction game where players work together to complete tasks while impostors try to sabotage and eliminate them.</p>
+                    <a href="#" class="btn btn-primary">Play Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card game-card">
+                <img src="f5.jpg" class="card-img-top" alt="Game 2">
+                <div class="card-body">
+                    <h5 class="card-title">PUBG Mobile</h5>
+                    <p class="card-text">A mobile version of the popular battle royale game, where players fight to be the last person standing.</p>
+                    <a href="#" class="btn btn-primary">Play Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card game-card">
+                <img src="f6.jpg" class="card-img-top" alt="Game 3">
+                <div class="card-body">
+                    <h5 class="card-title">Call of Duty: Mobile</h5>
+                    <p class="card-text">A first-person shooter A mobile version  with multiple game modes, including battle royale and classic multiplayer.
+                    </p>
+                    <a href="#" class="btn btn-primary">Play Now</a>
+                </div>
+            </div>
+        </div>
+    </div>  
+</section>
+
+<ul class="pagination">
+    <li class="prev-next"><a href="index.html">Previous</a></li>
+    <li class="page-item">1</li>
+    <li class="page-item current-page ">2</li>
+    <li class="page-item">3</li>
+    <li class="page-item">4</li>
+    <li class="page-item">5</li>
+    <li class="prev-next"><a href="Action_Games.html">Next</a></li>
+</ul>
+
+<!-- Footer -->
+<footer class="text-center text-lg-start mt-5">
+    <hr style="background-color: black;">
+    <div class="container">
+        <div class="row">
+            <a class="navbar-brand" href="index.html">
+                <img src="logo.png" class="img-fluid logo img" alt="Logo">
+            </a>
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase">Quick Links</h5>
+                <ul class="list-unstyled mb-0">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="Adventure_Games.html">Games</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase">Contact</h5>
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="#"><i class="fas fa-envelope"></i> Email Us</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-phone"></i> Call Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="text-center p-4" style="background-color: black;">
+        &copy; 2024 LevelUpGaming.com
+    </div>
+</footer>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

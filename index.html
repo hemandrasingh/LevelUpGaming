@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            scroll-behavior: smooth;
+            background: black;
+        }
+        .navbar {
+            background-color: #f8f9fa;
+            border-bottom: 1px solid #ddd;
+            position: fixed;
+            width: 100% ;
+            z-index: 1;
+            margin-top: -50px;
+        }
+
+        .navbar-brand img {
+            max-height: 50px;
+            margin-right: 10px;
+        }
+
+        .navbar-toggler {
+            border: 1px solid black;
+        }
+
+        .navbar-nav .nav-link {
+            color: #333;
+            transition: color 0.3s;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #ffcc00;
+        }
+
+        .contact-icons .nav-link {
+            color: #333;
+            transition: color 0.3s;
+            font-size: 20px;
+        }
+
+        .contact-icons .nav-link:hover {
+            color: #ffcc00;
+        }
+        .carousel-item {
+           width: 100%;
+        }
+        .gaming-slide {
+            position: relative;
+        }
+        .overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .overlay h2 {
+            color: #fff;
+            font-size: 2em;
+        }
+        .overlay p {
+            color: #fff;
+        }
+        .custom-button {
+            background-color: #ffcc00;
+            color: #000;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            cursor: pointer;
+        }
+        .custom-button:hover {
+            background-color: #000;
+            color: #ffcc00;
+        }
+        .card {
+        transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-title {
+            font-weight: bold;
+        }
+
+        .card-text {
+            color: #333;
+        }
+        .card-footer a.btn-warning:hover {
+            background-color: #ffcc00; 
+            border-color: #ffcc00;
+            color: #000; 
+        }
+
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .card {
+            margin: 20px;
+        }
+        .footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 20px;
+        }
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer a:hover {
+            color: #ffcc00; 
+        }
+        .footer .fa-brands {
+            color: #fff;
+            font-size: 24px;
+            margin-right: 10px;
+            transition: color 0.3s;
+            margin: 5px;
+        }
+        .copyright-line {
+            position: relative;
+            display: inline-block;
+            color: #fff;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #ffcc00; 
+        }
+    </style>
+    <title>LevelUpGaming.com</title>
+</head>
+<body>
+
+     <!-- Navbar -->
+     <nav class="navbar navbar-expand-lg bg-light top-fixed">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" class="img-fluid logo img" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">HOME</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#games" id="gamesDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            GAMES
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="gamesDropdown">
+                            <a class="dropdown-item" href="Action_Games.html">Action Games</a>
+                            <a class="dropdown-item" href="Adventure_Games.html">Adventure Games</a>
+                            <a class="dropdown-item" href="Racing_Games.html">Racing Games</a>
+                            <a class="dropdown-item" href="Free_Games.html">Free Games</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contect.html">CONTACT</a>
+                    </li>
+                </ul>
+                <div class="contact-icons">
+                    <a href="cart.html" class="nav-link"> 
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+     <!-- Sildershow-->
+
+    <div class="container-fluid mt-5">
+        <div id="carouselExample" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active gaming-slide">
+                    <img src="./1.jpg" class="d-block w-100" alt="...">
+                    <div class="overlay">
+                        <h2>Level Up Your Gaming</h2>
+                        <p>Explore the world of epic adventures and challenges.</p>
+                        <button class="custom-button">PLAY NOW</button>
+                    </div>
+                </div>
+                <div class="carousel-item gaming-slide" id="home">
+                    <img src="./2.jpg" class="d-block w-100" alt="...">
+                    <div class="overlay">
+                        <h2>Join the Gaming Community</h2>
+                        <p>Connect with fellow gamers and share your gaming experiences.</p>
+                        <button class="custom-button">EXPLORE</button>
+                    </div>
+                </div>
+                <div class="carousel-item gaming-slide">
+                    <img src="./3.jpg" class="d-block w-100" alt="...">
+                    <div class="overlay">
+                        <h2>Immerse Yourself in Gaming</h2>
+                        <p>Experience the latest gaming trends and innovations.</p>
+                        <button class="custom-button">DISCOVER</button>
+                    </div>
+                </div>
+                <div class="carousel-item gaming-slide">
+                    <img src="./m.png" class="d-block w-100" alt="...">
+                    <div class="overlay">
+                        <h2>Join the Gaming Community</h2>
+                        <p>Connect with fellow gamers and share your gaming experiences.</p>
+                        <button class="custom-button">EXPLORE</button>
+                    </div>
+                </div>
+                <div class="carousel-item gaming-slide">
+                    <img src="./p.png" class="d-block w-100" alt="...">
+                    <div class="overlay">
+                        <h2>Immerse Yourself in Gaming</h2>
+                        <p>Experience the latest gaming trends and innovations.</p>
+                        <button class="custom-button">DISCOVER</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- Hedding classes-->
+
+
+     <header class="jumbotron text-center text-light mt-5">
+        <h1 class="display-4">Level Up Central</h1>
+        <p>Level Up Central: Elevate Your Game.</p>
+    </header>
+
+
+    <!-- Cards -->
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./1.jpg" class="card-img-top" alt="Game Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Spider-Man 2</h5>
+                        <p class="card-text">Swing through the bustling streets of New York City as Spider-Man in 'Spider-Man 2'</p>
+                    </div>
+                    <div class="card-footer">
+                        <p class="card-price">$29.99</p>
+                        <a href="#" class="btn btn-warning">Buy</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./2.jpg" class="card-img-top" alt="Game Image">
+                    <div class="card-body">
+                        <h5 class="card-title">PlayerUnknown's Battlegrounds (PUBG)</h5>
+                        <p class="card-text">Join millions of players worldwide in the ultimate.</p>
+                    </div>
+                    <div class="card-footer">
+                        <p class="card-price">$39.99</p>
+                        <a href="#" class="btn btn-warning">Buy</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./4.jpg" class="card-img-top" alt="Game Image">
+                    <div class="card-body">
+                        <h5 class="card-title"> Grand Theft Auto V (GTA 5)</h5>
+                        <p class="card-text">Step into the sprawling metropolis of Los Santos.</p>
+                    </div>
+                    <div class="card-footer">
+                        <p class="card-price">$49.99</p>
+                        <a href="#" class="btn btn-warning">Buy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card ">
+                    <img src="./5.jpg" class="card-img-top" alt="Game Image">
+                    <div class="card-body">
+                        <h5 class="card-title">God of War</h5>
+                        <p class="card-text">Explore the realms of Norse mythology, battling gods, monsters, and ancient creatures in 'God of War.</p>
+                    </div>
+                    <div class="card-footer">
+                        <p class="card-price">$19.99</p>
+                        <a href="#" class="btn btn-warning">Buy</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./6.jpg" class="card-img-top" alt="Game Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Tomb Raider</h5>
+                        <p class="card-text">Explore the unknown, raid tombs, and uncover the mysteries of ancient civilizations.</p>
+                    </div>
+                    <div class="card-footer">
+                        <p class="card-price">$139.99</p>
+                        <a href="#" class="btn btn-warning">Buy</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./7.jpg" class="card-img-top" alt="Game Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Forza</h5>
+                        <p class="card-text">With its attention to detail and realistic physics, 'Forza' captures the essence of precision racing.</p>
+                    </div>
+                    <div class="card-footer">
+                        <p class="card-price">$79.99</p>
+                        <a href="#" class="btn btn-warning">Buy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hedding classes-->
+
+
+    <header class="jumbotron text-center text-light mt-5" id="about">
+        <h1 class="display-5"> "The Future of Gaming: A Digital Odyssey"</h1>
+    </header>
+   
+
+    <!-- Image Classes -->
+
+    <div class="container mt-5">
+        <div class="row mt-5" >
+          <div class="col-lg-4">
+            <img src="./caver.jpg" class="img-fluid"/>
+          </div>
+      
+          <!-- Paragraph Classes -->
+      
+      
+          <div class="col-lg-8 col-sm-12 text-light">
+            <p align="justify"> In the future, gaming is set to evolve in ways we can only begin to imagine. 
+                As technology continues to advance, virtual reality and augmented reality will seamlessly 
+                blend the digital and physical worlds, providing players with immersive experiences beyond their 
+                wildest dreams. Esports will further solidify their place in mainstream entertainment, with professional 
+                gamers and organized leagues becoming household names. The boundaries between single-player and multiplayer 
+                experiences will blur, fostering a sense of community and competition like never before. The future of 
+                gaming promises not only entertainment but also a platform for creativity, 
+                social interaction, and new forms of storytelling that will captivate and inspire generations to come.</p>
+          </div>
+        </div>
+      </div>
+      </div>
+
+    <!-- Expanded Footer -->
+    <footer class="bg-dark text-white mt-5 p-5 footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h5>About Us</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dapibus dapibus.</p>
+            </div>
+            <div class="col-md-4">
+                <h5>Popular Games</h5>
+                <ul class="list-unstyled">
+                    <li><a href="Action_Games.html">Action Games</a></li>
+                    <li><a href="#">Adventure Games</a></li>
+                    <li><a href="#">Racing Games</a></li>
+                    <li><a href="#">Strategy Games</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5>Connect with Us</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i> Twitter</a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Additional Gaming-Related Sections -->
+
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <h5>Featured Games</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">Best Sellers</a></li>
+                    <li><a href="#">Upcoming Releases</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5>Gaming News</h5>
+                <ul class="list-unstyled">
+                    <li><a href="update.html">Latest Updates</a></li>
+                    <li><a href="Action_Games.html">Game Reviews</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5>Contact Us</h5>
+                <ul class="list-unstyled">
+                    <li><a href="contect.html"><i class="fa-solid fa-envelope pe-2"></i>Email</a></li>
+                    <li><a href="contect.html"><i class="fa-solid fa-phone pe-2"></i> Phone</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+
+      <!-- Search Input Field and Button in One Line -->
+            
+      <form class="form-inline ml-auto">
+        <div class="input-group">
+            <input class="form-control" type="search" placeholder="Search for games" aria-label="Search">
+            <div class="input-group-append">
+                <button class="btn btn-outline-warning" type="submit">Search</button>
+            </div>
+        </div>
+    </form>
+
+    <div class="row mt-4">
+        <div class="col-md-12 text-center">
+            <p class="copyright-line">
+                &copy; 2024 LevelUpGaming.com
+            </p>
+        </div>
+    </div>
+    
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

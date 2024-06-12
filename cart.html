@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Cart</title>
+    <!-- Link Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Link Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Link Google Fonts - Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <style>
+        body {
+            background: url('./bg1.jpg') center center fixed;
+            background-size: cover;
+            color: #fff;
+            font-family: 'Roboto', sans-serif;
+            padding-top: 50px; /* Adjusted for fixed navbar */
+            margin: 0;
+        }
+
+        .cart-container {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .cart-item {
+            background-color: rgba(255, 255, 255, 0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        /* Additional styling for icons */
+        .fa-shopping-cart {
+            color: #fff;
+            font-size: 24px;
+            margin-right: 10px;
+        }
+
+        .fa-trash-alt {
+            color: #dc3545;
+            font-size: 18px;
+        }
+
+        /* Custom styling for gaming cart */
+        .cart-item img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+
+        .game-title {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .game-description {
+            font-size: 14px;
+            color: #ccc;
+            margin-bottom: 10px;
+        }
+
+        .game-price {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .game-total {
+            font-size: 18px;
+            font-weight: bold;
+        }
+               
+        footer {
+                background-color: #343a40;
+                color: white;
+                padding: 20px 0;
+            }
+
+            .footer-content {
+                display: flex;
+                flex-wrap: wrap; 
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .footer-logo {
+                font-size: 24px;
+                font-weight: bold;
+            }
+
+            .footer-links {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                display: flex;
+            }
+
+            .footer-links li {
+                margin-right: 20px;
+            }
+
+            .footer-links a {
+                color: white;
+                text-decoration: none;
+                transition: color 0.3s; 
+            }
+
+            .footer-links a:hover {
+                color: #ffcc00; 
+            }
+
+            .footer-social-icons {
+                display: flex;
+                align-items: center;
+            }
+
+            .social-icon {
+                margin-right: 10px;
+                color: white;
+                font-size: 20px;
+            }
+            .social-icon:hover {
+                margin-right: 10px;
+                color: yellow;
+                font-size: 20px;
+                transition: color 0.3s;
+            }    
+
+            .icon {
+                margin-right: 5px;
+            }
+            .copyright-line {
+                position: relative;
+                display: inline-block;
+                color: #fff;
+                padding-bottom: 5px;
+                border-bottom: 2px solid #ffcc00;
+            }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="cart-container">
+                    <h2 class="text-center mb-4"><i class="fas fa-shopping-cart"></i> Gaming Cart</h2>
+
+                    <!-- Cart items go here -->
+                    <div class="card cart-item">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="bgcart.jpeg" alt="Game Image">
+                            </div>
+                            <div class="col-md-6">
+                                <h5 class="game-title">World War Z <br> Game of the Year Edition</h5>
+                                <p class="game-description">World War Z Game of the Year Edition: Elevate your zombie-shooting experience with added content and thrills.</p>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="game-price">Price: $29.99</p>
+                                <p class="game-total">Total: $59.98</p>
+                                <a href="index.html" class="btn btn-danger"><i class="fas fa-trash-alt"></i> Remove</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Additional cart items go here -->
+
+                    <div class="text-center mt-4">
+                        <a href="#" class="btn btn-primary">Buy </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="mt-5">
+        <div class="container footer-content p-5">
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Action_Games.html">Games</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="footer-social-icons">
+                <i class="fab fa-facebook social-icon"></i>
+                <i class="fab fa-twitter social-icon"></i>
+                <i class="fab fa-instagram social-icon"></i>
+            </div>
+        </div>
+        <center>
+        <p class="text-light copyright-line">
+            &copy; 2023 LevelUpGaming.com
+        </p>
+    </center>
+    </footer>
+
+    <!-- Link Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
